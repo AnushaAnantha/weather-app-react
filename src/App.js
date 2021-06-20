@@ -12,7 +12,6 @@ function App() {
      <a
         href="https://github.com/AnushaAnantha/weather-app-react"
         rel="link to github"
-        target="_blank"
       >
         <i class="fab fa-github big-icon"></i>
       </a>
