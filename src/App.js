@@ -4,18 +4,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <h1>Weather App</h1>
       <Weather />
-      </header>
-      <footer> 
-     <a
+      <p>Powered by <a
         href="https://github.com/AnushaAnantha/weather-app-react"
-        rel="link to github"
-      >
-        <i class="fab fa-github big-icon"></i>
+        rel="link to github" 
+      >  <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+      alt="Github logo"
+      width="50" height="50"/>
       </a>
-      </footer>
+      </p>
+      </div>
+           
+  
     </div>
   );
 }

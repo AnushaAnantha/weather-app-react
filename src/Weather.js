@@ -45,6 +45,7 @@ export default function Weather() {
         <input type="submit" value="Search" />
       </form>
       <h4>{message}</h4>
+ 
     </div>
   );
 }
