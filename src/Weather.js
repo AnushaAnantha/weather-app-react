@@ -28,7 +28,7 @@ export default function Weather() {
         <li>Description: {response.data.weather[0].description}</li>
 
         <img
-          src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`}
+          src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`} alt = "Weather icon"
         />
       </ul>
     );
