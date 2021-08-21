@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios'; 
+import TemperatureConversion from "./TemperatureConversion";
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -22,7 +23,8 @@ export default function Weather() {
     console.log(response);
     setMessage(
       <ul>
-        <li>Temperature: {Math.round(response.data.main.temp)}°C</li>
+        
+      <li><TemperatureConversion celsius={response.data.main.temp} /></li>
         <li>Humidity: {response.data.main.humidity}%</li>
         <li>Wind: {response.data.wind.speed}km/h</li>
         <li>Description: {response.data.weather[0].description}</li>
