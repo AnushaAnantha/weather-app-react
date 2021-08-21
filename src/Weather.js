@@ -22,7 +22,7 @@ export default function Weather() {
   function showTemperature(response) {
     console.log(response);
     setMessage(
-      <ul>
+      <ul class="parameters">
         
       <li><TemperatureConversion celsius={response.data.main.temp} /></li>
         <li>Humidity: {response.data.main.humidity}%</li>
