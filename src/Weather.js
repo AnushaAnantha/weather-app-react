@@ -7,7 +7,6 @@ import "./App.css";
 
 export default function Weather() {
   const [city, setCity] = useState("");
-  const [message, setMessage] = useState("");
   const [weatherData, setWeatherData] = useState( {ready : false});
 
   let apiKey = "667b283f74e42ac5a41950daddbddfc8";
@@ -16,7 +15,7 @@ export default function Weather() {
   function handleSubmit(event) {
     event.preventDefault();
     if (city === "") {
-      setMessage("Enter a city");
+      alert("Enter a city");
     } else {
       getWeatherForCity(city);
     }
